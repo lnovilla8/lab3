@@ -19,12 +19,20 @@ public class ArrayExamples {
 
   // Returns a *new* array with all the elements of the input array in reversed
   // order
+  // static int[] reversed(int[] arr) {
+  //   int[] newArray = new int[arr.length];
+  //   for(int i = arr.length - 1; i >= 0; i--) {
+  //     newArray[arr.length - 1 - i] = arr[i];
+  //   }
+  //   return newArray;
+  // }
+
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
-    for(int i = arr.length - 1; i >= 0; i--) {
-      newArray[arr.length - 1 - i] = arr[i];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
     }
-    return newArray;
+    return arr;
   }
 
   // Averages the numbers in the array (takes the mean), but leaves out the

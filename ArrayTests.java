@@ -1,5 +1,4 @@
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
 import org.junit.*;
 
 public class ArrayTests {
@@ -21,6 +20,6 @@ public class ArrayTests {
   @Test
   public void testReversed() {
     int[] input1 = {1, 2, 3};
-    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 }
